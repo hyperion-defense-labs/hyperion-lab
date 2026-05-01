@@ -1,4 +1,3 @@
-cat > data/threat_intel.json << 'EOF'
 {
   "metadata": {
     "feed": "Hyperion Labs Sample Threat Intel",
@@ -27,4 +26,3 @@ cat > data/threat_intel.json << 'EOF'
     ]
   }
 }
-EOF

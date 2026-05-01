@@ -1,0 +1,84 @@
+cat > data/sample_alerts.json << 'EOF'
+[
+  {
+    "id": "ALT-001",
+    "source": "auth-monitor",
+    "event_type": "failed_login",
+    "src_ip": "192.168.1.45",
+    "username": "admin",
+    "message": "Multiple failed login attempts detected",
+    "count": 14,
+    "timestamp": "2024-11-01T08:23:11Z"
+  },
+  {
+    "id": "ALT-002",
+    "source": "firewall",
+    "event_type": "port_scan",
+    "src_ip": "10.0.0.88",
+    "username": null,
+    "message": "Sequential port scan detected from external host",
+    "count": 1,
+    "timestamp": "2024-11-01T08:31:05Z"
+  },
+  {
+    "id": "ALT-003",
+    "source": "dns-monitor",
+    "event_type": "suspicious_dns",
+    "src_ip": "192.168.2.10",
+    "username": null,
+    "message": "DNS query to known DGA-pattern domain",
+    "count": 3,
+    "timestamp": "2024-11-01T09:01:44Z"
+  },
+  {
+    "id": "ALT-004",
+    "source": "auth-monitor",
+    "event_type": "failed_login",
+    "src_ip": "203.0.113.99",
+    "username": "root",
+    "message": "Failed SSH login attempt",
+    "count": 2,
+    "timestamp": "2024-11-01T09:15:00Z"
+  },
+  {
+    "id": "ALT-005",
+    "source": "threat-feed",
+    "event_type": "connection_attempt",
+    "src_ip": "198.51.100.77",
+    "username": null,
+    "message": "Inbound connection from flagged IP address",
+    "count": 1,
+    "timestamp": "2024-11-01T09:22:30Z"
+  },
+  {
+    "id": "ALT-006",
+    "source": "auth-monitor",
+    "event_type": "failed_login",
+    "src_ip": "172.16.5.200",
+    "username": "jsmith",
+    "message": "Repeated failed login for standard user account",
+    "count": 11,
+    "timestamp": "2024-11-01T09:45:17Z"
+  },
+  {
+    "id": "ALT-007",
+    "source": "ids",
+    "event_type": "policy_violation",
+    "src_ip": "192.168.1.102",
+    "username": "guest",
+    "message": "Access attempt to restricted file share",
+    "count": 1,
+    "timestamp": "2024-11-01T10:03:55Z"
+  },
+  {
+    "id": "ALT-008",
+    "source": "dns-monitor",
+    "event_type": "suspicious_dns",
+    "src_ip": "192.168.3.55",
+    "username": null,
+    "message": "High-frequency DNS queries to a single external host",
+    "count": 6,
+    "timestamp": "2024-11-01T10:15:00Z"
+  }
+]
+EOF

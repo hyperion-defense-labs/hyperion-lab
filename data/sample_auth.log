@@ -1,0 +1,30 @@
+cat > data/sample_auth.log << 'EOF'
+Nov  1 07:12:03 webserver sshd[2201]: Failed password for invalid user oracle from 203.0.113.5 port 54321 ssh2
+Nov  1 07:12:09 webserver sshd[2201]: Failed password for invalid user oracle from 203.0.113.5 port 54321 ssh2
+Nov  1 07:12:15 webserver sshd[2201]: Failed password for invalid user oracle from 203.0.113.5 port 54321 ssh2
+Nov  1 07:12:21 webserver sshd[2201]: Failed password for invalid user oracle from 203.0.113.5 port 54321 ssh2
+Nov  1 07:12:27 webserver sshd[2201]: Failed password for invalid user oracle from 203.0.113.5 port 54321 ssh2
+Nov  1 07:13:01 webserver sshd[2205]: Accepted password for deploy from 10.0.1.15 port 22 ssh2
+Nov  1 07:45:22 webserver sshd[2301]: Failed password for admin from 192.168.1.50 port 41230 ssh2
+Nov  1 07:45:28 webserver sshd[2301]: Failed password for admin from 192.168.1.50 port 41230 ssh2
+Nov  1 07:45:34 webserver sshd[2301]: Failed password for admin from 192.168.1.50 port 41230 ssh2
+Nov  1 07:46:01 webserver sshd[2302]: Accepted password for admin from 192.168.1.50 port 41231 ssh2
+Nov  1 08:00:14 webserver sshd[2401]: Failed password for root from 198.51.100.22 port 33901 ssh2
+Nov  1 08:00:20 webserver sshd[2401]: Failed password for root from 198.51.100.22 port 33901 ssh2
+Nov  1 08:00:26 webserver sshd[2401]: Failed password for root from 198.51.100.22 port 33901 ssh2
+Nov  1 08:00:32 webserver sshd[2401]: Failed password for root from 198.51.100.22 port 33901 ssh2
+Nov  1 08:00:38 webserver sshd[2401]: Failed password for root from 198.51.100.22 port 33901 ssh2
+Nov  1 08:00:44 webserver sshd[2401]: Failed password for root from 198.51.100.22 port 33901 ssh2
+Nov  1 08:00:50 webserver sshd[2401]: Failed password for root from 198.51.100.22 port 33901 ssh2
+Nov  1 08:02:05 webserver sshd[2410]: Failed password for invalid user xmrig from 198.51.100.22 port 33902 ssh2
+Nov  1 08:30:00 webserver sshd[2500]: Accepted password for jdoe from 10.0.1.20 port 22 ssh2
+Nov  1 09:11:45 webserver sshd[2601]: Failed password for invalid user test from 172.16.0.9 port 12345 ssh2
+Nov  1 09:11:51 webserver sshd[2601]: Failed password for invalid user test from 172.16.0.9 port 12345 ssh2
+Nov  1 09:12:05 webserver sshd[2602]: Failed password for invalid user scanner from 172.16.0.9 port 12346 ssh2
+Nov  1 09:30:00 webserver sshd[2700]: Accepted password for backup from 10.0.1.30 port 22 ssh2
+Nov  1 10:00:00 webserver sshd[2800]: Failed password for invalid user nagios from 192.168.5.5 port 55000 ssh2
+Nov  1 10:00:06 webserver sshd[2800]: Failed password for invalid user nagios from 192.168.5.5 port 55000 ssh2
+Nov  1 10:00:12 webserver sshd[2800]: Failed password for invalid user nagios from 192.168.5.5 port 55000 ssh2
+Nov  1 10:00:18 webserver sshd[2800]: Failed password for invalid user nagios from 192.168.5.5 port 55000 ssh2
+Nov  1 10:05:30 webserver sshd[2810]: Accepted password for nagios from 192.168.5.5 port 55001 ssh2
+EOF

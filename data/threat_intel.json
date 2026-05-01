@@ -1,0 +1,30 @@
+cat > data/threat_intel.json << 'EOF'
+{
+  "metadata": {
+    "feed": "Hyperion Labs Sample Threat Intel",
+    "version": "1.0",
+    "last_updated": "2024-11-01",
+    "description": "Sample IOC feed for demonstration purposes only. Not real threat intelligence."
+  },
+  "indicators": {
+    "ips": [
+      { "value": "198.51.100.77", "threat_type": "C2 Server",            "confidence": "high",   "source": "abuse-ch" },
+      { "value": "203.0.113.99",  "threat_type": "Brute Force",           "confidence": "medium", "source": "blocklist-de" },
+      { "value": "198.51.100.22", "threat_type": "Scanner",               "confidence": "medium", "source": "shodan" },
+      { "value": "45.33.32.156",  "threat_type": "Malware Distribution",  "confidence": "high",   "source": "virustotal" },
+      { "value": "185.220.101.5", "threat_type": "Tor Exit Node",         "confidence": "low",    "source": "dan-me" }
+    ],
+    "domains": [
+      { "value": "malware-c2-example.net",  "threat_type": "C2 Domain",    "confidence": "high",   "source": "urlhaus" },
+      { "value": "phish-login-example.com", "threat_type": "Phishing",     "confidence": "high",   "source": "openphish" },
+      { "value": "dga-pattern-abc123.xyz",  "threat_type": "DGA Domain",   "confidence": "medium", "source": "bambenek" },
+      { "value": "free-crypto-miner.io",    "threat_type": "Cryptomining", "confidence": "medium", "source": "coinblocker" }
+    ],
+    "hashes": [
+      { "value": "d41d8cd98f00b204e9800998ecf8427e", "threat_type": "Known Malware", "algorithm": "md5",    "confidence": "high",   "source": "virustotal" },
+      { "value": "e3b0c44298fc1c149afbf4c8996fb924", "threat_type": "Ransomware",    "algorithm": "sha256", "confidence": "high",   "source": "malwarebazaar" },
+      { "value": "aabbccddeeff00112233445566778899", "threat_type": "Trojan",         "algorithm": "md5",    "confidence": "medium", "source": "hybrid-analysis" }
+    ]
+  }
+}
+EOF

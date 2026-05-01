@@ -1,0 +1,5 @@
+cat > requirements.txt << 'EOF'
+# Hyperion Labs — no external dependencies required.
+# All tools use the Python 3 standard library only.
+# Python 3.9+ recommended.
+EOF
